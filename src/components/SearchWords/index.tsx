@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { get, values } from 'lodash';
 import './index.css';
 
@@ -18,7 +18,7 @@ const SearchWords = ({ foundWords, level }: SearchWordsProps): React.ReactElemen
 		<div className="search-words">
 			<div className="search-words__header">
 				<p className="search-words__main-word">{get(level, 'word')}</p>
-				<p>Words Remaining: {values(wordLocations).length}</p>
+				<p className="search-words__words-remaining">Words Remaining: {values(wordLocations).length}</p>
 			</div>
 			<ul>
 				{values(wordLocations).map((location, key) => (
