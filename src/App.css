@@ -1,0 +1,31 @@
+.app__header h1, .app__footer {
+    font-family: proxima-nova,sans-serif;
+    text-align: center;
+    margin: 21px 0;
+}
+
+.app__footer {
+    padding: 0 20px;
+}
+
+.app__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    min-height: 270px;
+}
+
+.app__game-over {
+    font-weight: bold;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 680px) {
+    .app__content {
+        display: grid;
+    }
+}

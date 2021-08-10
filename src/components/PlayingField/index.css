@@ -1,0 +1,57 @@
+.playing-field {
+    display: flex;
+
+    border: 1px solid #3d3d3d;
+    padding: 2px;
+}
+
+.playing-field__cells {
+    display: flex;
+}
+
+.playing-field__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.playing-field__cell {
+    min-width: 50px;
+    min-height: 50px;
+
+    margin: 2px;
+
+    border-radius: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+    cursor: pointer;
+
+    font-size: 32px;
+    font-family: proxima-nova,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #414141;
+
+    text-transform: capitalize;
+}
+
+.playing-field__cell:active, .playing-field__cell--highlighted {
+    background-color: #cff;
+}
+
+@media only screen and (max-width: 500px) {
+    .playing-field__cell {
+        min-width: 35px;
+        min-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .playing-field__cell {
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
